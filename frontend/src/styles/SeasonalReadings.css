@@ -1,0 +1,68 @@
+.seasonal-readings {
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seasonal-readings h2 {
+    font-size: 2rem;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.reading-card {
+    width: 100%;
+    max-width: 600px; /* Set a max width for the reading card */
+    padding: 15px;
+    background-color: #ffecb3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reading-card h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.reading-card p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.reading-card-image {
+    width: 100%;
+    max-width: 100%; /* Ensure image doesn't exceed parent width */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to separate from the image */
+}
+
+.learn-more-link:hover {
+    background-color: #e65100;
+}
