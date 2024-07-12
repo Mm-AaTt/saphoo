@@ -6,9 +6,15 @@ import SearchPage from './pages/SearchPage'; // Ensure this path is correct
 import Profile from './pages/Profile'; // Ensure this path is correct
 import Login from './components/Auth/Login'; // Ensure this path is correct
 import Register from './components/Auth/Register'; // Ensure this path is correct
-import '/Users/matinatuladhar/Desktop/final-saphoo-mhicha/frontend/src/styles/GlobalStyles.css';
-const App = () => {
+import Footer from './components/Layout/Footer';
+import SignUpSection from './components/Layout/SignupSection';
+import ReadingChallenges from './components/ReadingChallenges';
+import SeasonalReadings from './components/SeasonalReadings';
+import AboutSection from './components/AboutSection';
+
+function App(){
   return (
+    
     <Router>
       <Navbar />
       <div className="container">
@@ -19,8 +25,14 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
+        <SignUpSection />
+        <ReadingChallenges />
+        <SeasonalReadings />
+        <AboutSection />
+        <Footer />
       </div>
     </Router>
+    
   );
 };
 

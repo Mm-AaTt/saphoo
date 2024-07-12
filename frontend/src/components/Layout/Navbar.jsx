@@ -1,12 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '/Users/matinatuladhar/Desktop/final-saphoo-mhicha/frontend/src/styles/Navbar.css';
+import '/Users/matinatuladhar/Desktop/saphoo/frontend/src/styles/Navbar.css';
 
 const Navbar = () => {
     return(
         <nav className = "navbar">
             <div className = "container">
-                <Link to="/"> <img src={require('/Users/matinatuladhar/Desktop/final-saphoo-mhicha/frontend/src/assets/images/logo.png')} alt="Logo" className='navbar-logo'/></Link>
+                <Link to="/"> <img src={require('/Users/matinatuladhar/Desktop/saphoo/frontend/src/assets/images/logo.png')} alt="Logo" className='navbar-logo'/></Link>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link to="/" className="nav-link">Home</Link>
