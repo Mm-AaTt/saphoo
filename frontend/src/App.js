@@ -11,7 +11,7 @@ import SignUpSection from './components/Layout/SignupSection';
 import ReadingChallenges from './components/ReadingChallenges';
 import SeasonalReadings from './components/SeasonalReadings';
 import AboutSection from './components/AboutSection';
-
+import CardsSection from './components/Layout/CardsSection';
 function App(){
   return (
     
@@ -29,6 +29,7 @@ function App(){
         <ReadingChallenges />
         <SeasonalReadings />
         <AboutSection />
+        <CardsSection/>
         <Footer />
       </div>
     </Router>
