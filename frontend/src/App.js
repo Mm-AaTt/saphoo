@@ -4,6 +4,8 @@ import Navbar from './components/Layout/Navbar';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage';
 import AuthorProfile from './pages/AuthorProfile';
+import UserProfile from './pages/UserProfile';
+import BookPage from './pages/BookPage';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Footer from './components/Layout/Footer';
@@ -34,6 +36,8 @@ function App() {
           {/* Route for AfterSignIn, redirect to Home if not authenticated */}
           <Route path="/after-sign-in" element={isAuthenticated ? <AfterSignIn /> : <Navigate to="/" />} />
           <Route path="/author/:authorId" element={<AuthorProfile />}/>
+          <Route path="/user/:userId" element={<UserProfile />}/>
+          <Route path="/book/:bookId" element={<BookPage />}/>
         </Routes>
 
         {/* Render additional components only if user is not authenticated */}

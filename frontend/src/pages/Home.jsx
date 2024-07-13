@@ -8,6 +8,18 @@ const authors = [
     // Add more authors as needed
 ];
 
+const users = [
+    { id: 1, name: 'User 1' },
+    { id: 2, name: 'User 2' },
+    // Add more users as needed
+];
+
+const books = [
+    { id: 1, name: 'Book 1' },
+    { id: 2, name: 'Book 2' },
+    // Add more books as needed
+];
+
 const Home = () => {
     return (
         <div className="home-container">
@@ -20,6 +32,26 @@ const Home = () => {
                     {authors.map(author => (
                         <li key={author.id}>
                             <Link to={`/author/${author.id}`}>{author.name}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="user-section">
+                <h1>Users</h1>
+                <ul>
+                    {users.map(user => (
+                        <li key={user.id}>
+                            <Link to={`/user/${user.id}`}>{user.name}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="book-section">
+                <h1>Books</h1>
+                <ul>
+                    {books.map(book => (
+                        <li key={book.id}>
+                            <Link to={`/book/${book.id}`}>{book.name}</Link>
                         </li>
                     ))}
                 </ul>

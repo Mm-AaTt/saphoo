@@ -1,0 +1,94 @@
+.profile-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-content {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .user-image {
+    width: 200px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-stats div {
+    margin-bottom: 5px;
+  }
+  
+  .main-column {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .username-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .username-section h2 {
+    margin-right: 20px;
+  }
+  
+  .details-section {
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .detail-bar {
+    height: 20px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .bookshelves, .recent-updates {
+    margin-bottom: 20px;
+  }
+  
+  .right-column {
+    flex: 1;
+  }
+
+  .reading-challenge {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+  
+  .reading-challenge, .following {
+    margin-bottom: 20px;
+  }
+  
+  .reading-challenge h3, .following h3 {
+    margin-bottom: 10px;
+  }
+  
+  .following-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .following-item {
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+  }
+  
+  

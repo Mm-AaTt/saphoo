@@ -25,23 +25,6 @@ const AuthorProfile = () => {
 
   return (
     <div className="author-profile-container">
-      <header>
-        <div className="logo">सफू मिचा</div>
-        <nav>
-          <ul>
-            <li>HOME</li>
-            <li>MY BOOKS</li>
-            <li>BROWSE</li>
-            <li>COMMUNITY</li>
-          </ul>
-        </nav>
-        <div className="search-bar">
-          <input type="text" placeholder="Search Books" />
-          <button>
-            <i className="fa fa-search"></i>
-          </button>
-        </div>
-      </header>
       <div className="main-content">
         <aside>
           <div className="author-image">Author Image</div>
@@ -81,7 +64,6 @@ const AuthorProfile = () => {
           </div>
         </aside>
       </div>
-      <footer>© 2024 SaphooMhicha</footer>
     </div>
   );
 };
