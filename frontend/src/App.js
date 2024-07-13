@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Navbar from './components/Layout/Navbar';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage';
-import Profile from './pages/Profile';
+import AuthorProfile from './pages/AuthorProfile';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Footer from './components/Layout/Footer';
@@ -28,12 +28,12 @@ function App() {
           {/* Route for Home page, redirect to AfterSignIn if authenticated */}
           <Route path="/" element={isAuthenticated ? <Navigate to="/after-sign-in" /> : <Home />} />
           <Route path="/search" element={<SearchPage />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           
           {/* Route for AfterSignIn, redirect to Home if not authenticated */}
           <Route path="/after-sign-in" element={isAuthenticated ? <AfterSignIn /> : <Navigate to="/" />} />
+          <Route path="/author/:authorId" element={<AuthorProfile />}/>
         </Routes>
 
         {/* Render additional components only if user is not authenticated */}

@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
 
-
-.home-container{
-    height:100vh;
-    width:100%;
+.home-container {
+    height: 100vh;
+    width: 100%;
     position: relative;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align:center;
-    padding :20 px;
-    z-index:10;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
 }
 
-.home-vid{
-        height:100%;
-        width:100%;
-        object-fit :cover;
-        position:fixed;
-        z-index:-1;
+.home-vid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
 }
 
 .home-header1 {
@@ -29,7 +28,6 @@
     margin-bottom: 20px;
     color: #f39c12;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    
 }
 
 .home-header2 {
@@ -47,39 +45,79 @@
     color: #6f1717df;
 }
 
-.signup-box{
-    border:1 px solid #ddd;
+.signup-box {
+    border: 1px solid #ddd;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: #f5f5f5;
 }
 
-.reading-challenges{
-    border:1 px solid #ddd;
+.reading-challenges {
+    border: 1px solid #ddd;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: #f5f5f5;
 }
 
-.seasonal-readings{
-    border:1 px solid #ddd;
+.seasonal-readings {
+    border: 1px solid #ddd;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: #f5f5f5;
 }
 
-.about{
-    border:1 px solid #ddd;
+.about {
+    border: 1px solid #ddd;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: #f5f5f5;
 }
 
-.image-size{
+.image-size {
     width: 300px;
-    height:auto;
+    height: auto;
+}
+
+/* New styles for the author section */
+.author-section {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.author-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.author-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.author-section li {
+    margin: 10px 0;
+}
+
+.author-section a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+.author-section a:hover {
+    color: #e74c3c;
 }
