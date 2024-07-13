@@ -1,40 +1,56 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Layout/Navbar';
-import Home from './pages/Home'; // Ensure this path is correct
-import SearchPage from './pages/SearchPage'; // Ensure this path is correct
-import Profile from './pages/Profile'; // Ensure this path is correct
-import Login from './components/Auth/Login'; // Ensure this path is correct
-import Register from './components/Auth/Register'; // Ensure this path is correct
+import Home from './pages/Home';
+import SearchPage from './pages/SearchPage';
+import Profile from './pages/Profile';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
 import Footer from './components/Layout/Footer';
 import SignUpSection from './components/Layout/SignupSection';
 import ReadingChallenges from './components/ReadingChallenges';
 import SeasonalReadings from './components/SeasonalReadings';
 import AboutSection from './components/AboutSection';
 import CardsSection from './components/Layout/CardsSection';
-function App(){
+import AfterSignIn from './pages/AfterSignIn';
+import { useAuth } from './context/AuthContext';
+
+function App() {
+  const { isAuthenticated } = useAuth();
+
   return (
-    
     <Router>
-      <Navbar />
+      {/* Render Navbar only if not on AfterSignIn page and user is authenticated */}
+      {!isAuthenticated || window.location.pathname !== '/after-sign-in' ? <Navbar /> : null}
+      
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Route for Home page, redirect to AfterSignIn if authenticated */}
+          <Route path="/" element={isAuthenticated ? <Navigate to="/after-sign-in" /> : <Home />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          
+          {/* Route for AfterSignIn, redirect to Home if not authenticated */}
+          <Route path="/after-sign-in" element={isAuthenticated ? <AfterSignIn /> : <Navigate to="/" />} />
         </Routes>
-        <SignUpSection />
-        <ReadingChallenges />
-        <SeasonalReadings />
-        <AboutSection />
-        <CardsSection/>
+
+        {/* Render additional components only if user is not authenticated */}
+        {!isAuthenticated && (
+          <>
+            <SignUpSection />
+            <ReadingChallenges />
+            <SeasonalReadings />
+            <AboutSection />
+            <CardsSection />
+          </>
+        )}
+
         <Footer />
       </div>
     </Router>
-    
   );
-};
+}
 
 export default App;

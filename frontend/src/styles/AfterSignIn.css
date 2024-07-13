@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Container */
+  .acontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alogo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a90e2;
+  }
+  
+  .anav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .anav button {
+    background-color: #4a90e2;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .anav button:hover {
+    background-color: #357ab7;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #e4e7eb;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: none;
+    background: transparent;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #4a90e2;
+    font-size: 1.2em;
+  }
+  
+  /* Main Content and Sidebar */
+  main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sections */
+  .currently-reading,
+  .reading-challenges,
+  .want-to-read,
+  .bookshelves,
+  .seasonal-updates,
+  .personal-feed,
+  .recommendations,
+  .choice-awards {
+    margin-bottom: 20px;
+  }
+  
+  .currently-reading h2,
+  .reading-challenges h2,
+  .want-to-read h2,
+  .bookshelves h2,
+  .seasonal-updates h2,
+  .personal-feed h2,
+  .recommendations h2,
+  .choice-awards h2 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+    font-size: 1.2em;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+  }
+  
+  .want-to-read div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .want-to-read img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .recommendation-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reading Challenges */
+  .reading-challenges {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .reading-challenges h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .reading-challenges p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .reading-challenges ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .reading-challenges li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .reading-challenges img{
+    width: 10px;
+    height: auto;
+  }
+  
+  /* Join Button */
+  .join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .join-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adjust spacing between seasonal-updates and recommendations */
+  .seasonal-updates {
+    margin-right: 40px; /* Increase margin-bottom to create more space */
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SignUpSection() {
   return (
@@ -17,7 +18,7 @@ function SignUpSection() {
             Service and Privacy Policy.
           </p>
         </form>
-        <p>Already a member? Sign In</p>
+        <p>Already a member? <Link to="/login">Sign In</Link></p>
       </div>
     </section>
   );
